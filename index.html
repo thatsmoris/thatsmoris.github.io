@@ -12,11 +12,13 @@
     <meta name="theme-color" content="#09090b" />
 
     <title>Akampurira Moris - Quantitative Finance</title>
+
     <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet"
@@ -89,6 +91,7 @@
             z-index: -10;
             pointer-events: none;
             overflow: hidden;
+
             background:
                 radial-gradient(
                     circle at 50% -10%,
@@ -100,9 +103,12 @@
 
         .background::before {
             content: "";
+
             position: absolute;
             inset: 0;
+
             opacity: 0.35;
+
             background-image:
                 linear-gradient(
                     rgba(255, 255, 255, 0.025) 1px,
@@ -113,7 +119,9 @@
                     rgba(255, 255, 255, 0.025) 1px,
                     transparent 1px
                 );
+
             background-size: 60px 60px;
+
             mask-image: linear-gradient(
                 to bottom,
                 black,
@@ -123,13 +131,19 @@
 
         .background-glow {
             position: absolute;
+
             width: 500px;
             height: 500px;
+
             border-radius: 50%;
+
             background: rgba(239, 68, 68, 0.07);
+
             filter: blur(120px);
+
             top: 5%;
             left: 50%;
+
             transform: translateX(-50%);
         }
 
@@ -139,14 +153,17 @@
 
         .nav {
             position: fixed;
+
             top: 0;
             left: 0;
             right: 0;
+
             z-index: 100;
 
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
             background: rgba(9, 9, 11, 0.72);
+
             backdrop-filter: blur(18px);
             -webkit-backdrop-filter: blur(18px);
         }
@@ -154,6 +171,7 @@
         .nav-inner {
             width: min(var(--max-width), calc(100% - 40px));
             height: 72px;
+
             margin: auto;
 
             display: flex;
@@ -164,10 +182,12 @@
         .brand {
             display: flex;
             align-items: center;
+
             gap: 12px;
 
             font-family: "Space Grotesk", sans-serif;
             font-weight: 600;
+
             letter-spacing: -0.03em;
         }
 
@@ -194,6 +214,7 @@
         .nav-links {
             display: flex;
             align-items: center;
+
             gap: 30px;
 
             color: var(--muted);
@@ -211,6 +232,7 @@
         .nav-github {
             display: flex;
             align-items: center;
+
             gap: 8px;
 
             padding: 9px 15px;
@@ -237,6 +259,7 @@
 
         .hero {
             min-height: 100vh;
+
             padding-top: 72px;
 
             display: flex;
@@ -245,17 +268,21 @@
 
         .hero-inner {
             width: min(var(--max-width), calc(100% - 40px));
+
             margin: auto;
 
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
+
             gap: 80px;
+
             align-items: center;
         }
 
         .eyebrow {
             display: inline-flex;
             align-items: center;
+
             gap: 9px;
 
             padding: 7px 12px;
@@ -269,6 +296,7 @@
 
             font-family: "DM Mono", monospace;
             font-size: 11px;
+
             letter-spacing: 0.02em;
         }
 
@@ -277,6 +305,7 @@
             height: 6px;
 
             border-radius: 50%;
+
             background: var(--accent);
 
             box-shadow: 0 0 12px var(--accent);
@@ -288,9 +317,13 @@
             max-width: 850px;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: clamp(58px, 8vw, 105px);
+
             line-height: 0.91;
+
             letter-spacing: -0.065em;
+
             font-weight: 600;
         }
 
@@ -304,8 +337,11 @@
             color: #d4d4d8;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: clamp(20px, 2.5vw, 30px);
+
             line-height: 1.2;
+
             letter-spacing: -0.03em;
         }
 
@@ -317,12 +353,14 @@
             color: var(--muted);
 
             font-size: 16px;
+
             line-height: 1.8;
         }
 
         .hero-actions {
             display: flex;
             flex-wrap: wrap;
+
             gap: 12px;
 
             margin-top: 35px;
@@ -332,6 +370,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+
             gap: 9px;
 
             padding: 13px 18px;
@@ -374,6 +413,7 @@
         .hero-socials {
             display: flex;
             align-items: center;
+
             gap: 18px;
 
             margin-top: 28px;
@@ -398,6 +438,7 @@
             position: relative;
 
             display: flex;
+
             justify-content: center;
             align-items: center;
         }
@@ -406,6 +447,7 @@
             position: relative;
 
             width: min(390px, 75vw);
+
             aspect-ratio: 1;
 
             border-radius: 50%;
@@ -434,6 +476,7 @@
             content: "";
 
             position: absolute;
+
             inset: 12%;
 
             border-radius: 50%;
@@ -447,6 +490,7 @@
             content: "";
 
             position: absolute;
+
             inset: 27%;
 
             border-radius: 50%;
@@ -459,6 +503,7 @@
 
         .orb-core {
             position: absolute;
+
             inset: 40%;
 
             border-radius: 50%;
@@ -476,14 +521,17 @@
             padding: 8px 11px;
 
             border: 1px solid var(--border);
+
             border-radius: 8px;
 
             background: rgba(15, 15, 18, 0.82);
+
             backdrop-filter: blur(10px);
 
             color: var(--muted);
 
             font-family: "DM Mono", monospace;
+
             font-size: 10px;
         }
 
@@ -527,6 +575,7 @@
 
         .section-intro {
             max-width: 700px;
+
             margin-bottom: 55px;
         }
 
@@ -536,8 +585,11 @@
             color: var(--accent-light);
 
             font-family: "DM Mono", monospace;
+
             font-size: 11px;
+
             letter-spacing: 0.08em;
+
             text-transform: uppercase;
         }
 
@@ -545,8 +597,11 @@
             margin: 0;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: clamp(36px, 5vw, 54px);
+
             line-height: 1;
+
             letter-spacing: -0.05em;
         }
 
@@ -556,6 +611,7 @@
             color: var(--muted);
 
             line-height: 1.8;
+
             font-size: 15px;
         }
 
@@ -565,8 +621,11 @@
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 70px;
+
             align-items: start;
         }
 
@@ -574,6 +633,7 @@
             color: #d4d4d8;
 
             font-size: 18px;
+
             line-height: 1.9;
         }
 
@@ -587,6 +647,7 @@
 
         .principles {
             display: grid;
+
             gap: 12px;
         }
 
@@ -594,6 +655,7 @@
             padding: 20px;
 
             border: 1px solid var(--border);
+
             border-radius: 14px;
 
             background: rgba(255, 255, 255, 0.015);
@@ -605,6 +667,7 @@
 
         .principle:hover {
             transform: translateX(4px);
+
             border-color: rgba(239, 68, 68, 0.35);
         }
 
@@ -614,6 +677,7 @@
             color: var(--accent);
 
             font-family: "DM Mono", monospace;
+
             font-size: 11px;
         }
 
@@ -621,105 +685,135 @@
             margin-bottom: 7px;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-weight: 600;
         }
 
         .principle-text {
             color: var(--muted);
+
             font-size: 13px;
+
             line-height: 1.7;
         }
 
         /* --------------------------------
-           TECH STACK
-        -------------------------------- */
+   TECH STACK
+-------------------------------- */
 
-        .tech-card {
-            width: 260px;
-            height: 260px;
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 220px), 1fr)
+    );
+    gap: clamp(12px, 2vw, 18px);
+}
 
-            margin: 0 auto;
+.tech-card {
+    min-width: 0;
+    min-height: clamp(220px, 24vw, 260px);
 
-            padding: 28px;
+    padding: clamp(20px, 3vw, 28px);
 
-            border: 1px solid rgba(239, 68, 68, 0.20);
-            border-radius: 18px;
+    border: 1px solid rgba(239, 68, 68, 0.20);
+    border-radius: 18px;
 
-            background:
-                linear-gradient(
-                    145deg,
-                    rgba(239, 68, 68, 0.07),
-                    rgba(255, 255, 255, 0.015)
-                );
+    background:
+        linear-gradient(
+            145deg,
+            rgba(239, 68, 68, 0.07),
+            rgba(255, 255, 255, 0.015)
+        );
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-            transition:
-                transform 0.25s ease,
-                border-color 0.25s ease,
-                box-shadow 0.25s ease;
-        }
+    text-align: center;
 
-        .tech-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(239, 68, 68, 0.5);
+    gap: clamp(14px, 2vw, 18px);
 
-            box-shadow:
-                0 20px 60px rgba(0, 0, 0, 0.25),
-                0 0 40px rgba(239, 68, 68, 0.05);
-        }
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
 
-        .python-icon {
-            width: 95px;
-            height: 95px;
+.tech-card:hover {
+    transform: translateY(-4px);
 
-            display: grid;
-            place-items: center;
+    border-color: rgba(239, 68, 68, 0.5);
 
-            border-radius: 16px;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25),
+        0 0 40px rgba(239, 68, 68, 0.05);
+}
 
-            background: #111827;
+.tech-icon {
+    width: clamp(72px, 8vw, 95px);
+    height: clamp(72px, 8vw, 95px);
 
-            border: 1px solid rgba(255, 255, 255, 0.08);
+    display: grid;
+    place-items: center;
 
-            overflow: hidden;
-        }
+    border-radius: 16px;
 
-        .python-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    background: #111827;
 
-        .tech-name {
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 25px;
-            font-weight: 600;
-        }
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
-        .tech-status {
-            margin-top: 5px;
+    overflow: hidden;
+}
 
-            display: flex;
-            align-items: center;
-            gap: 7px;
+.tech-icon img {
+    display: block;
 
-            color: var(--accent-light);
+    width: 100%;
+    height: 100%;
 
-            font-family: "DM Mono", monospace;
-            font-size: 11px;
-        }
+    object-fit: contain;
+}
+
+.tech-name {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(20px, 2vw, 25px);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+}
+
+.tech-status {
+    margin-top: 7px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    color: var(--accent-light);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: clamp(9px, 1vw, 11px);
+
+    line-height: 1.3;
+
+    white-space: nowrap;
+}
 
         .status-dot {
             display: inline-block;
+
             width: 6px;
             height: 6px;
-            margin-right: 7px;
+
+            margin-right: 2px;
 
             border-radius: 50%;
 
@@ -736,11 +830,13 @@
             0%,
             100% {
                 opacity: 1;
+
                 transform: scale(1);
             }
 
             50% {
                 opacity: 0.25;
+
                 transform: scale(0.8);
             }
         }
@@ -751,7 +847,9 @@
 
         .projects {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 18px;
         }
 
@@ -759,12 +857,15 @@
             position: relative;
 
             min-height: 310px;
+
             padding: 28px;
 
             display: flex;
+
             flex-direction: column;
 
             border: 1px solid var(--border);
+
             border-radius: 18px;
 
             background: rgba(255, 255, 255, 0.015);
@@ -780,6 +881,7 @@
             content: "";
 
             position: absolute;
+
             top: 0;
             left: 0;
             right: 0;
@@ -795,6 +897,7 @@
 
         .project:hover {
             transform: translateY(-5px);
+
             border-color: rgba(239, 68, 68, 0.35);
         }
 
@@ -806,6 +909,7 @@
             color: var(--accent);
 
             font-family: "DM Mono", monospace;
+
             font-size: 11px;
         }
 
@@ -813,6 +917,7 @@
             margin: 22px 0 8px;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 25px;
         }
 
@@ -820,6 +925,7 @@
             color: var(--accent-light);
 
             font-family: "DM Mono", monospace;
+
             font-size: 10px;
         }
 
@@ -829,15 +935,19 @@
             color: var(--muted);
 
             font-size: 13px;
+
             line-height: 1.8;
         }
 
         .project-footer {
             margin-top: auto;
+
             padding-top: 30px;
 
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
         }
 
@@ -845,11 +955,13 @@
             color: var(--subtle);
 
             font-family: "DM Mono", monospace;
+
             font-size: 10px;
         }
 
         .project-arrow {
             color: var(--subtle);
+
             font-size: 18px;
 
             transition:
@@ -859,6 +971,7 @@
 
         .project:hover .project-arrow {
             color: var(--accent);
+
             transform: translate(3px, -3px);
         }
 
@@ -868,20 +981,25 @@
 
         .achievements {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+
+            grid-template-columns: 1fr;
+
             gap: 14px;
         }
 
         .achievement {
-            aspect-ratio: 1 / 1;
+            min-height: 230px;
 
             display: flex;
+
             flex-direction: column;
+
             justify-content: space-between;
 
             padding: 28px;
 
             border: 1px solid var(--border);
+
             border-radius: 16px;
 
             background: rgba(255, 255, 255, 0.015);
@@ -904,6 +1022,7 @@
             color: var(--accent);
 
             font-family: "DM Mono", monospace;
+
             font-size: 11px;
         }
 
@@ -917,8 +1036,11 @@
             color: var(--accent-light);
 
             font-family: "DM Mono", monospace;
+
             font-size: 10px;
+
             letter-spacing: 0.08em;
+
             text-transform: uppercase;
         }
 
@@ -926,8 +1048,11 @@
             margin: 0;
 
             font-family: "Space Grotesk", sans-serif;
+
             font-size: 21px;
+
             font-weight: 600;
+
             letter-spacing: -0.025em;
         }
 
@@ -939,6 +1064,7 @@
             color: var(--muted);
 
             font-size: 13px;
+
             line-height: 1.7;
         }
 
@@ -948,14 +1074,19 @@
 
         .achievement-meta {
             display: flex;
+
             flex-direction: column;
+
             align-items: flex-end;
+
             gap: 5px;
 
             color: var(--subtle);
 
             font-family: "DM Mono", monospace;
+
             font-size: 9px;
+
             white-space: nowrap;
         }
 
@@ -965,10 +1096,13 @@
 
         .github-insights {
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             width: 100%;
+
             padding: 20px 0;
         }
 
@@ -976,6 +1110,7 @@
             display: block;
 
             width: min(100%, 495px);
+
             height: auto;
 
             border-radius: 14px;
@@ -987,6 +1122,7 @@
 
         .github-streak:hover {
             transform: translateY(-4px);
+
             filter: brightness(1.08);
         }
 
@@ -995,15 +1131,23 @@
         -------------------------------- */
 
         .social-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-        }
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(170px, 1fr)
+    );
+
+    gap: clamp(10px, 1.5vw, 14px);
+}
 
         .social-card {
+            min-width: 0;
+
             padding: 25px;
 
             border: 1px solid var(--border);
+
             border-radius: 15px;
 
             background: rgba(255, 255, 255, 0.015);
@@ -1015,6 +1159,7 @@
 
         .social-card:hover {
             transform: translateY(-4px);
+
             border-color: rgba(239, 68, 68, 0.35);
         }
 
@@ -1025,6 +1170,7 @@
             margin-bottom: 22px;
 
             display: flex;
+
             align-items: center;
             justify-content: flex-start;
 
@@ -1040,6 +1186,7 @@
 
         .social-name {
             font-family: "Space Grotesk", sans-serif;
+
             font-weight: 600;
         }
 
@@ -1049,6 +1196,7 @@
             color: var(--muted);
 
             font-family: "DM Mono", monospace;
+
             font-size: 11px;
         }
 
@@ -1064,131 +1212,495 @@
             color: var(--subtle);
 
             font-family: "DM Mono", monospace;
+
             font-size: 10px;
         }
 
         .footer-inner {
             width: min(var(--max-width), calc(100% - 40px));
+
             margin: auto;
 
             display: flex;
+
             justify-content: space-between;
+
             gap: 20px;
         }
 
         /* --------------------------------
-           MOBILE
-        -------------------------------- */
+   RESPONSIVE SYSTEM
+-------------------------------- */
 
-        @media (max-width: 900px) {
-            .nav-links {
-                display: none;
-            }
+/* Fluid containers */
 
-            .hero-inner {
-                grid-template-columns: 1fr;
-                gap: 60px;
+.nav-inner,
+.container,
+.footer-inner,
+.hero-inner {
+    width: min(
+        var(--max-width),
+        calc(100% - clamp(28px, 6vw, 80px))
+    );
+}
 
-                padding-top: 60px;
-                padding-bottom: 70px;
-            }
 
-            .hero-visual {
-                order: -1;
-            }
+/* Fluid sections */
 
-            .orb {
-                width: 280px;
-            }
+section {
+    padding-block: clamp(72px, 10vw, 120px);
+}
 
-            .label-left {
-                left: -8%;
-            }
 
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 45px;
-            }
+/* --------------------------------
+   TABLET
+-------------------------------- */
 
-            .projects {
-                grid-template-columns: 1fr;
-            }
+@media (max-width: 1000px) {
 
-            .social-grid {
-                grid-template-columns: 1fr;
-            }
+    .nav-links {
+        gap: 20px;
+    }
 
-            section {
-                padding: 85px 0;
-            }
-        }
+    .hero-inner {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(260px, 0.8fr);
 
-        @media (max-width: 600px) {
-            .nav-inner,
-            .container,
-            .footer-inner {
-                width: min(100% - 28px, var(--max-width));
-            }
+        gap: clamp(35px, 6vw, 60px);
+    }
 
-            .brand span {
-                display: none;
-            }
+    .hero h1 {
+        font-size: clamp(54px, 8vw, 80px);
+    }
 
-            .hero h1 {
-                font-size: 58px;
-            }
+    .hero-subtitle {
+        font-size: clamp(19px, 3vw, 25px);
+    }
 
-            .hero-subtitle {
-                font-size: 20px;
-            }
+    .about-grid {
+        gap: clamp(35px, 6vw, 60px);
+    }
 
-            .hero-description {
-                font-size: 14px;
-            }
+    .projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-            .orb {
-                width: 230px;
-            }
+    .social-grid {
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(180px, 1fr)
+        );
+    }
+}
 
-            .label-left {
-                left: -4%;
-            }
 
-            .label-top {
-                right: -7%;
-            }
+/* --------------------------------
+   SMALL TABLET / LARGE PHONE
+-------------------------------- */
 
-            .tech-card {
-                width: 230px;
-                height: 230px;
-                padding: 22px;
-            }
+@media (max-width: 820px) {
 
-            .python-icon {
-                width: 82px;
-                height: 82px;
-            }
+    .nav-links {
+        display: none;
+    }
 
-            .tech-name {
-                font-size: 21px;
-            }
+    .hero {
+        min-height: auto;
 
-            .footer-inner {
-                flex-direction: column;
-            }
-        }
+        padding-top: 130px;
+        padding-bottom: 90px;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+
+        gap: 65px;
+
+        text-align: center;
+    }
+
+    .hero-inner > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description {
+        max-width: 650px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .orb {
+        width: min(330px, 65vw);
+    }
+
+    .label-left {
+        left: -8%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement {
+        gap: 25px;
+    }
+}
+
+
+/* --------------------------------
+   PHONE
+-------------------------------- */
+
+@media (max-width: 600px) {
+
+    .nav-inner,
+    .container,
+    .footer-inner,
+    .hero-inner {
+        width: calc(100% - 28px);
+    }
+
+    .nav-inner {
+        height: 64px;
+    }
+
+    .nav-github {
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 105px;
+        padding-bottom: 70px;
+    }
+
+    .eyebrow {
+        max-width: 100%;
+
+        padding: 6px 10px;
+
+        font-size: 9px;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        margin-top: 22px;
+
+        font-size: clamp(
+            48px,
+            15vw,
+            65px
+        );
+
+        line-height: 0.93;
+    }
+
+    .hero-subtitle {
+        font-size: clamp(
+            18px,
+            5vw,
+            22px
+        );
+    }
+
+    .hero-description {
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+    .hero-actions {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+
+        padding: 13px 16px;
+    }
+
+    .hero-socials {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .orb {
+        width: min(250px, 68vw);
+    }
+
+    .orb-label {
+        padding: 7px 9px;
+
+        font-size: 8px;
+    }
+
+    .label-top {
+        right: -8%;
+    }
+
+    .label-left {
+        left: -8%;
+    }
+
+    .label-bottom {
+        left: -8%;
+    }
+
+    .section-intro {
+        margin-bottom: 38px;
+    }
+
+    .section-title {
+        font-size: clamp(
+            34px,
+            10vw,
+            44px
+        );
+    }
+
+    .section-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .about-text {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .tech-card {
+        min-height: 195px;
+
+        padding: 16px;
+
+        border-radius: 14px;
+
+        gap: 12px;
+    }
+
+    .tech-icon {
+        width: clamp(62px, 19vw, 78px);
+        height: clamp(62px, 19vw, 78px);
+
+        border-radius: 12px;
+    }
+
+    .tech-name {
+        font-size: clamp(17px, 5vw, 21px);
+    }
+
+    .tech-status {
+        font-size: 8px;
+
+        gap: 5px;
+    }
+
+    .status-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .project {
+        min-height: 280px;
+
+        padding: 23px;
+
+        border-radius: 15px;
+    }
+
+    .achievement {
+        padding: 22px;
+
+        min-height: auto;
+    }
+
+    .achievement-meta {
+        align-items: flex-start;
+    }
+
+    .github-insights {
+        padding: 10px 0;
+    }
+
+    .github-streak {
+        width: 100%;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .social-card {
+        padding: 18px;
+
+        border-radius: 13px;
+    }
+
+    .social-icon {
+        margin-bottom: 15px;
+    }
+
+    .social-name {
+        font-size: 14px;
+    }
+
+    .social-handle {
+        font-size: 9px;
+
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        padding: 28px 0;
+    }
+
+    .footer-inner {
+        align-items: center;
+
+        text-align: center;
+    }
+}
+
+
+/* --------------------------------
+   VERY SMALL PHONES
+-------------------------------- */
+
+@media (max-width: 380px) {
+
+    .nav-inner,
+    .container,
+    .footer-inner,
+    .hero-inner {
+        width: calc(100% - 22px);
+    }
+
+    .brand-mark {
+        width: 31px;
+        height: 31px;
+
+        font-size: 11px;
+    }
+
+    .nav-github {
+        padding: 7px 10px;
+
+        font-size: 11px;
+    }
+
+    .hero {
+        padding-top: 95px;
+    }
+
+    .orb {
+        width: min(215px, 65vw);
+    }
+
+    .tech-card {
+        min-height: 175px;
+
+        padding: 12px;
+    }
+
+    .tech-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .tech-name {
+        font-size: 16px;
+    }
+
+    .tech-status {
+        font-size: 7px;
+    }
+
+    .social-card {
+        padding: 15px;
+    }
+}
+
+
+/* --------------------------------
+   TOUCH DEVICES
+-------------------------------- */
+
+@media (hover: none) {
+
+    .tech-card:hover,
+    .project:hover,
+    .social-card:hover,
+    .principle:hover {
+        transform: none;
+    }
+}
+
+
+/* --------------------------------
+   REDUCE MOTION
+-------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
     </style>
 </head>
 
 <body>
+
     <div class="background">
         <div class="background-glow"></div>
     </div>
 
     <!-- NAVIGATION -->
+
     <nav class="nav">
         <div class="nav-inner">
-            <a href="/" class="brand">
+
+            <a href="index.html" class="brand">
                 <span class="brand-mark">AM</span>
             </a>
 
@@ -1210,13 +1722,18 @@
                 GitHub
                 <span>&rarr;</span>
             </a>
+
         </div>
     </nav>
 
     <!-- HERO -->
+
     <header class="hero">
+
         <div class="hero-inner">
+
             <div>
+
                 <div class="eyebrow">
                     <span class="eyebrow-dot"></span>
                     Building Toward Quantitative Finance
@@ -1240,13 +1757,16 @@
                 </p>
 
                 <div class="hero-actions">
+
                     <a href="#projects" class="button button-primary">
                         Explore the work
                         <span>&darr;</span>
                     </a>
+
                 </div>
 
                 <div class="hero-socials">
+
                     <a
                         href="https://www.linkedin.com/in/thatsmoris/"
                         target="_blank"
@@ -1262,15 +1782,19 @@
                     >
                         X
                     </a>
+
                 </div>
+
             </div>
 
             <div class="hero-visual">
+
                 <div class="orb">
+
                     <div class="orb-core"></div>
 
                     <div class="orb-label label-top">
-                        QUANT
+                        MARKETS
                     </div>
 
                     <div class="orb-label label-left">
@@ -1280,17 +1804,28 @@
                     <div class="orb-label label-bottom">
                         CODE
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
 
     <main>
+
         <!-- ABOUT -->
+
         <section id="about">
+
             <div class="container">
+
                 <div class="section-intro">
-                    <div class="section-kicker">01 / About</div>
+
+                    <div class="section-kicker">
+                        01 / About
+                    </div>
 
                     <h2 class="section-title">
                         Learning by building.
@@ -1302,13 +1837,18 @@
                         research foundations required to build serious
                         quantitative systems.
                     </p>
+
                 </div>
 
                 <div class="about-grid">
+
                     <div class="about-text">
+
                         <p>
-                            I am a student focused on <strong>Mathematics,
-                            Programming and Financial markets</strong>,
+                            I am a student focused on
+                            <strong>
+                                Mathematics, Programming and Financial markets
+                            </strong>,
                             with a long-term goal of working in quantitative
                             finance.
                         </p>
@@ -1324,11 +1864,16 @@
                             sharpen the underlying reasoning rather than
                             simply produce another application.
                         </p>
+
                     </div>
 
                     <div class="principles">
+
                         <div class="principle">
-                            <div class="principle-number">01</div>
+
+                            <div class="principle-number">
+                                01
+                            </div>
 
                             <div class="principle-title">
                                 First principles
@@ -1338,10 +1883,14 @@
                                 Understand why something works before
                                 relying on an abstraction.
                             </div>
+
                         </div>
 
                         <div class="principle">
-                            <div class="principle-number">02</div>
+
+                            <div class="principle-number">
+                                02
+                            </div>
 
                             <div class="principle-title">
                                 Build systems
@@ -1351,10 +1900,14 @@
                                 Turn ideas into reproducible software,
                                 experiments and research.
                             </div>
+
                         </div>
 
                         <div class="principle">
-                            <div class="principle-number">03</div>
+
+                            <div class="principle-number">
+                                03
+                            </div>
 
                             <div class="principle-title">
                                 Test reality
@@ -1364,53 +1917,155 @@
                                 Treat assumptions as hypotheses and try
                                 to break them.
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
 
         <!-- TECH STACK -->
+
         <section id="stack">
+
             <div class="container">
+
                 <div class="section-intro">
-                    <div class="section-kicker">02 / Tech Stack</div>
+
+                    <div class="section-kicker">
+                        02 / Tech Stack
+                    </div>
 
                     <h2 class="section-title">
-                        One tool. For now.
+                        Tools for the work.
                     </h2>
 
                     <p class="section-description">
-                        The current stack is intentionally narrow. Depth
-                        matters more than collecting logos.
+                        The stack is still growing. The objective is not
+                        collecting technologies, but becoming genuinely
+                        capable with the tools required to build.
                     </p>
+
                 </div>
 
-                <div class="tech-card">
-                    <div class="python-icon">
-                        <img
-                            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
-                            alt="Python"
-                        />
-                    </div>
+                <div class="tech-grid">
 
-                    <div>
-                        <div class="tech-name">Python</div>
+    <!-- PYTHON -->
 
-                        <div class="tech-status">
-                            <span class="status-dot"></span>
-                            CURRENTLY LEARNING
-                        </div>
-                    </div>
-                </div>
+    <div class="tech-card">
+
+        <div class="tech-icon">
+            <img
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
+                alt="Python"
+            />
+        </div>
+
+        <div>
+            <div class="tech-name">
+                Python
             </div>
-        </section>
+            
+            <div class="tech-status">
+                <span class="status-dot"></span>
+                ACTIVE & CURRENTLY LEARNING
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <div class="tech-card">
+
+        <div class="tech-icon">
+            <img
+                src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=000000"
+                alt="JavaScript"
+            />
+        </div>
+
+        <div>
+            <div class="tech-name">
+                JavaScript
+            </div>
+
+            <div class="tech-status">
+                <span class="status-dot"></span>
+                CURRENTLY LEARNING
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- HTML5 -->
+
+    <div class="tech-card">
+
+        <div class="tech-icon">
+            <img
+                src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+                alt="HTML5"
+            />
+        </div>
+
+        <div>
+            <div class="tech-name">
+                HTML5
+            </div>
+
+            <div class="tech-status">
+                <span class="status-dot"></span>
+                ACTIVE
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CSS3 -->
+
+    <div class="tech-card">
+
+        <div class="tech-icon">
+            <img
+                src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&amp;logo=css3&amp;logoColor=white"
+                alt="CSS3"
+            />
+        </div>
+
+        <div>
+            <div class="tech-name">
+                CSS3
+            </div>
+
+            <div class="tech-status">
+                <span class="status-dot"></span>
+                ACTIVE
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
         <!-- PROJECTS -->
+
         <section id="projects">
+
             <div class="container">
+
                 <div class="section-intro">
-                    <div class="section-kicker">03 / Projects</div>
+
+                    <div class="section-kicker">
+                        03 / Projects
+                    </div>
 
                     <h2 class="section-title">
                         Research through code.
@@ -1420,20 +2075,27 @@
                         Projects are where mathematics, data and software
                         engineering meet.
                     </p>
+
                 </div>
 
                 <div class="projects">
+
+                    <!-- RIIS -->
+
                     <a
                         href="https://github.com/thatsmoris"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="project"
                     >
+
                         <div class="project-number">
                             01
                         </div>
 
-                        <h3>RIIS</h3>
+                        <h3>
+                            RIIS
+                        </h3>
 
                         <div class="project-type">
                             Quantitative Research System
@@ -1446,6 +2108,7 @@
                         </p>
 
                         <div class="project-footer">
+
                             <span class="project-language">
                                 Python
                             </span>
@@ -1453,8 +2116,12 @@
                             <span class="project-arrow">
                                 &nearr;
                             </span>
+
                         </div>
+
                     </a>
+
+                    <!-- DEEPA -->
 
                     <a
                         href="https://github.com/thatsmoris"
@@ -1462,11 +2129,14 @@
                         rel="noopener noreferrer"
                         class="project"
                     >
+
                         <div class="project-number">
                             02
                         </div>
 
-                        <h3>DEEPA</h3>
+                        <h3>
+                            DEEPA
+                        </h3>
 
                         <div class="project-type">
                             Data &amp; Economic Evidence Processing Architecture
@@ -1479,6 +2149,7 @@
                         </p>
 
                         <div class="project-footer">
+
                             <span class="project-language">
                                 Python
                             </span>
@@ -1486,17 +2157,28 @@
                             <span class="project-arrow">
                                 &nearr;
                             </span>
+
                         </div>
+
                     </a>
+
                 </div>
+
             </div>
+
         </section>
 
         <!-- ACHIEVEMENTS -->
+
         <section id="achievements">
+
             <div class="container">
+
                 <div class="section-intro">
-                    <div class="section-kicker">04 / Achievements</div>
+
+                    <div class="section-kicker">
+                        04 / Achievements
+                    </div>
 
                     <h2 class="section-title">
                         Proof of the work.
@@ -1506,47 +2188,78 @@
                         Milestones that reflect progress in Mathematics,
                         Programming and Quantitative thinking.
                     </p>
+
                 </div>
 
                 <div class="achievements">
+
                     <div class="achievement">
-                        <div class="achievement-number">01</div>
+
+                        <div class="achievement-number">
+                            01
+                        </div>
 
                         <div class="achievement-content">
+
                             <div class="achievement-label">
                                 Mathematics
                             </div>
 
                             <h3>
-                                UMS Paper 2 — National Ranking
+                                UMS Paper 2 &mdash; National Ranking
                             </h3>
 
                             <p>
-                                Ranked <strong>147th out of 2,045</strong>
+                                Ranked
+                                <strong>
+                                    147th out of 2,045
+                                </strong>
                                 participants in the Uganda Mathematical
                                 Society National Mathematics Contest Paper 2,
                                 qualifying me for the
-                                <strong>Mathematics Bootcamp</strong>, part of
-                                the selection pathway toward
-                                <strong>Uganda's National Mathematical
-                                Olympiad Team</strong>.
+                                <strong>
+                                    Mathematics Bootcamp
+                                </strong>,
+                                part of the selection pathway toward
+                                <strong>
+                                    Uganda's National Mathematical
+                                    Olympiad Team
+                                </strong>.
                             </p>
+
                         </div>
 
                         <div class="achievement-meta">
-                            <span>UMS</span>
-                            <span>2026</span>
+
+                            <span>
+                                UMS
+                            </span>
+
+                            <span>
+                                2026
+                            </span>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
 
         <!-- GITHUB INSIGHTS -->
+
         <section id="github">
+
             <div class="container">
+
                 <div class="section-intro">
-                    <div class="section-kicker">05 / GitHub Insights</div>
+
+                    <div class="section-kicker">
+                        05 / GitHub Insights
+                    </div>
 
                     <h2 class="section-title">
                         The work leaves a trace.
@@ -1556,37 +2269,53 @@
                         A snapshot of my activity and consistency as I build,
                         experiment and learn.
                     </p>
+
                 </div>
 
                 <div class="github-insights">
+
                     <img
                         src="https://github-readme-streak-stats.herokuapp.com/?user=thatsmoris&amp;theme=blood-dark&amp;hide_border=true"
                         alt="GitHub contribution streak"
                         class="github-streak"
                     />
+
                 </div>
+
             </div>
+
         </section>
 
         <!-- CONNECT -->
+
         <section id="connect">
+
             <div class="container">
+
                 <div class="section-intro">
-                    <div class="section-kicker">06 / Connect</div>
+
+                    <div class="section-kicker">
+                        06 / Connect
+                    </div>
 
                     <h2 class="section-title">
                         Let's Connect.
                     </h2>
+
                 </div>
 
                 <div class="social-grid">
+                    <!-- LINKEDIN -->
+
                     <a
                         href="https://www.linkedin.com/in/thatsmoris/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="social-card"
                     >
+
                         <div class="social-icon">
+
                             <svg
                                 viewBox="0 0 24 24"
                                 aria-hidden="true"
@@ -1595,6 +2324,7 @@
                                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V8.998h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.605 0 4.267 2.373 4.267 5.467v6.276ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124ZM3.56 20.452h3.554V8.998H3.56v11.454ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"
                                 />
                             </svg>
+
                         </div>
 
                         <div class="social-name">
@@ -1604,7 +2334,10 @@
                         <div class="social-handle">
                             @thatsmoris
                         </div>
+
                     </a>
+
+                    <!-- X -->
 
                     <a
                         href="https://x.com/thatsmoris"
@@ -1612,7 +2345,9 @@
                         rel="noopener noreferrer"
                         class="social-card"
                     >
+
                         <div class="social-icon">
+
                             <svg
                                 viewBox="0 0 24 24"
                                 aria-hidden="true"
@@ -1621,6 +2356,7 @@
                                     d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.967 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"
                                 />
                             </svg>
+
                         </div>
 
                         <div class="social-name">
@@ -1630,15 +2366,151 @@
                         <div class="social-handle">
                             @thatsmoris
                         </div>
+
                     </a>
+
+                    <!-- KAGGLE -->
+
+                    <a
+                        href="https://www.kaggle.com/thatsmoris"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card"
+                    >
+
+                        <div class="social-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M18.825 23.859c-.17 0-.317-.061-.442-.184l-6.722-6.72-1.824 1.825v4.624c0 .301-.154.455-.455.455H6.26c-.301 0-.455-.154-.455-.455V.596c0-.3.154-.455.455-.455h3.122c.301 0 .455.154.455.455v13.04l7.572-7.572c.13-.13.276-.195.442-.195h4.01c.3 0 .455.154.455.455v2.027c0 .301-.154.455-.455.455h-2.05l-5.11 5.11 6.52 6.52c.13.13.195.276.195.442v2.126c0 .3-.154.455-.455.455h-2.131Z"
+                                />
+                            </svg>
+
+                        </div>
+
+                        <div class="social-name">
+                            Kaggle
+                        </div>
+
+                        <div class="social-handle">
+                            @thatsmoris
+                        </div>
+
+                    </a>
+
+                    <!-- LEETCODE -->
+
+                    <a
+                        href="https://leetcode.com/u/thatsmoris/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card"
+                    >
+
+                        <div class="social-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M17.047 20.5H6.953a3.453 3.453 0 0 1-2.449-1.004L1.504 16.5a3.453 3.453 0 0 1 0-4.9l3-3a3.453 3.453 0 0 1 4.9 0l1.097 1.097-1.414 1.414L7.99 10.014a1.453 1.453 0 0 0-2.071 0l-3 3a1.453 1.453 0 0 0 0 2.071l3 3a1.453 1.453 0 0 0 1.034.429h10.094a1.453 1.453 0 0 0 1.034-.429l3-3a1.453 1.453 0 0 0 0-2.071l-3-3a1.453 1.453 0 0 0-2.071 0l-1.097 1.097-1.414-1.414 1.097-1.097a3.453 3.453 0 0 1 4.9 0l3 3a3.453 3.453 0 0 1 0 4.9l-3 3a3.453 3.453 0 0 1-2.449 1.004Z"
+                                />
+                            </svg>
+
+                        </div>
+
+                        <div class="social-name">
+                            LeetCode
+                        </div>
+
+                        <div class="social-handle">
+                            @thatsmoris
+                        </div>
+
+                    </a>
+
+                    <!-- HACKERRANK -->
+
+                    <a
+                        href="https://www.hackerrank.com/thatsmoris"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card"
+                    >
+
+                        <div class="social-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0Zm6.5 15.5h-3v-7h3v7Zm-4.5 0h-3v-3H8v3H5.5V8.5H8v2h3v-2h3v7Z"
+                                />
+                            </svg>
+
+                        </div>
+
+                        <div class="social-name">
+                            HackerRank
+                        </div>
+
+                        <div class="social-handle">
+                            @thatsmoris
+                        </div>
+
+                    </a>
+
+                    <!-- CODEFORCES -->
+
+                    <a
+                        href="https://codeforces.com/profile/thatsmoris"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card"
+                    >
+
+                        <div class="social-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M4.5 19.5h3v-9h-3v9Zm6 0h3v-15h-3v15Zm6 0h3v-6h-3v6Z"
+                                />
+                            </svg>
+
+                        </div>
+
+                        <div class="social-name">
+                            Codeforces
+                        </div>
+
+                        <div class="social-handle">
+                            @thatsmoris
+                        </div>
+
+                    </a>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
     <!-- FOOTER -->
+
     <footer>
+
         <div class="footer-inner">
+
             <span>
                 &copy; 2026 Akampurira Moris
             </span>
@@ -1646,7 +2518,10 @@
             <span>
                 Math &middot; Code &middot; Markets
             </span>
+
         </div>
+
     </footer>
+
 </body>
 </html>
